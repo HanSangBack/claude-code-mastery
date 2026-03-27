@@ -1,10 +1,14 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
       "Skill(update-config)",
       "Bash(find ~ -maxdepth 2 -name .claude -o -name claude*config*)",
       "Bash(git checkout:*)",
       "Bash(git merge:*)"
-    ]
-  }
+    ],
+    "defaultMode": "plan"
+  },
+  "outputStyle": "support",
+  "language": "ko-KR"
 }
